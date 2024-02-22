@@ -1,0 +1,7 @@
+D:\Proyectos2024\Cursos\CursoC#\Practicas sobre temas en  c#\Clases, metodos y delegados\PracticasConC\bin\Debug\PracticasConC.exe.config
+D:\Proyectos2024\Cursos\CursoC#\Practicas sobre temas en  c#\Clases, metodos y delegados\PracticasConC\bin\Debug\PracticasConC.exe
+D:\Proyectos2024\Cursos\CursoC#\Practicas sobre temas en  c#\Clases, metodos y delegados\PracticasConC\bin\Debug\PracticasConC.pdb
+D:\Proyectos2024\Cursos\CursoC#\Practicas sobre temas en  c#\Clases, metodos y delegados\PracticasConC\obj\Debug\PracticasConC.csproj.AssemblyReference.cache
+D:\Proyectos2024\Cursos\CursoC#\Practicas sobre temas en  c#\Clases, metodos y delegados\PracticasConC\obj\Debug\PracticasConC.csproj.CoreCompileInputs.cache
+D:\Proyectos2024\Cursos\CursoC#\Practicas sobre temas en  c#\Clases, metodos y delegados\PracticasConC\obj\Debug\PracticasConC.exe
+D:\Proyectos2024\Cursos\CursoC#\Practicas sobre temas en  c#\Clases, metodos y delegados\PracticasConC\obj\Debug\PracticasConC.pdb

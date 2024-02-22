@@ -1,0 +1,77 @@
+﻿            /*Alumnos de 4to diversificado*/
+            Alumnos alumno1 =
+            new Alumnos("Andy Daniel Cuyuch", "Informatica", "4 diversificado", 12, 20181234);
+            Alumnos alumno2 =
+            new Alumnos("Briseyda Yulianna Boror", "Medicina", "4 diversificado", 20, 2018112);
+
+            /*Alumnos de 5to diversificado*/
+            Alumnos alumno11 =
+            new Alumnos("Alexander Cruz", "Informatica", "5 diversificado", 20, 20181234);
+            Alumnos alumno22 =
+            new Alumnos("Josselin Mateo", "Medicina", "5 diversificado", 20, 2018112);
+
+
+
+            /*Lista de los Alumnos que pertenecen a cuarto*/
+            List<Alumnos> listaAlumnos = new List<Alumnos>();
+            listaAlumnos.Add(alumno1);
+            listaAlumnos.Add(alumno2);
+
+            GradosScolares grado = new GradosScolares("4to diversificado", listaAlumnos);
+
+            Console.WriteLine($"Alumnos en el grado {grado.GradoEscolar}:");
+            foreach (var alumno in grado.ListaAlumnos)
+            {
+                Console.WriteLine($"Nombre: {alumno.NombreAlumno}, Carrera: {alumno.Carrera}, Grado: {alumno.GradoScolar}, Edad: {alumno.Edad}, Carnet: {alumno.Carnet}");
+            }
+
+            // Lista de los alumnos que pertenecen a quinto 
+            List<Alumnos> listaAlumnosQuinto = new List<Alumnos>();
+            listaAlumnosQuinto.Add(alumno11);
+            listaAlumnosQuinto.Add(alumno22);
+
+            GradosScolares gradoQuintoDiversificado = new GradosScolares("5to diversificado", listaAlumnosQuinto);
+            
+            Console.WriteLine("Los alumnos que estan en el grado {0}",gradoQuintoDiversificado.GradoEscolar);
+            foreach (var studentsFive in gradoQuintoDiversificado.ListaAlumnos)
+            {
+                Console.WriteLine($"Nombre: {studentsFive.NombreAlumno}, Carrera: {studentsFive.Carrera}, Grado: {studentsFive.GradoScolar}, Edad: {studentsFive.Edad}, Carnet: {studentsFive.Carnet}");
+
+            }
+
+            Profesores profesor = new Profesores("Marcos Perez", "Informatica", "4 diversificado", 12, 12, " 4 diversificado");
+
+
+            --------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+                        // Esta línea de código crea un diccionario que permite almacenar listas de alumnos asociadas a diferentes grados escolar
+            Dictionary<string, List<Alumnos>> gradosPorAlumno = new Dictionary<string, List<Alumnos>>();
+
+            List<Alumnos> listaAlumnosCuarto = new List<Alumnos>
+            {
+                new Alumnos("Andy Daniel Cuyuch", "Informatica", "4 diversificado", 12, 20181234),
+                new Alumnos("Briseyda Yulianna Boror", "Medicina", "4 diversificado", 20, 2018112)
+            };
+
+            gradosPorAlumno["4to diversifiado"] = listaAlumnosCuarto;
+
+            List<Alumnos> listaAlumnosQuinto = new List<Alumnos>
+            {
+                new Alumnos("Josselin Mateo", "Medicina", "5 diversificado", 20, 2018112),
+                new Alumnos("Alexander Cruz", "Informatica", "5 diversificado", 20, 20181234)
+             };
+
+            gradosPorAlumno["5TO Diversificado"] = listaAlumnosQuinto;
+
+            // Mostrar los alumnos por grado
+
+            foreach (var kvp in gradosPorAlumno)
+            {
+                Console.WriteLine($"Alumnos en el grado {kvp.Key}:");
+                // Permite recorrer los alumnnos de cada grado y mostrar su informacion
+                foreach (var alumno in kvp.Value)
+                {
+                    Console.WriteLine($"Nombre: {alumno.NombreAlumno}, Carrera: {alumno.Carrera}, Grado: {alumno.GradoScolar}, Edad: {alumno.Edad}, Carnet: {alumno.Carnet}");
+
+                }
+            }
